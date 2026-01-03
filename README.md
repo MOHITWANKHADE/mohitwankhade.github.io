@@ -1,85 +1,119 @@
-# 👋 Mohit Wankhade  
-**Software Engineer | .NET & Angular | Eurofins**
+# 👨‍💻 Mohit Wankhade  
+**Software Engineer | .NET & Angular | Eurofins IT Solutions**
 
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/u/12345678?v=4" width="128" alt="Mohit Wankhade">
+</p>
+
+📍 **Bengaluru, India** | 📱 **+91 9907695839** | ✉️ **[1998mohitwankhade@gmail.com](mailto:1998mohitwankhadegmail.com)**  
+🔗 **[LinkedIn](https://in.linkedin.com/in/mohit-wankhade-6b7989157)** | 💻 **[GitHub](https://github.com/MOHITWANKHADE)**
+
+---
 
 ## 🚀 About Me
-Software developer with **2+ years** experience building enterprise web applications using **.NET**, **Angular**, and **SQL Server** at **Eurofins IT Solutions** (Bangalore, India). Passionate about clean code, database optimization, and scalable APIs.
+**Software Engineer** with **4+ years** experience building enterprise applications using **.NET Framework 4.8**, **Angular**, **ASP.NET Core**, and **SQL Server**. Currently developing **Eurofins lab testing software** used across multiple facilities. Proven track record of **performance optimization** (reduced 100k user download time from **4-5 hours to 30-45 minutes**).[file:82]
 
-**📍 Location**: Bangalore, India  
-**💼 Current**: Eurofins IT Solutions  
-**📧 Email**: [mohit.wankhade@example.com](mailto:mohit.wankhade@example.com)  
-**🔗 LinkedIn**: [Mohit Wankhade](https://in.linkedin.com/in/mohit-wankhade-6b7989157)  
-**💻 GitHub**: [MOHITWANKHADE](https://github.com/MOHITWANKHADE)
+**Key strengths**: Database optimization, fullstack development, team leadership, Grafana monitoring.
 
 ---
 
-## 🛠️ Skills
+## 🛠️ Technical Skills
 
-| **Backend** | **Frontend** | **Database** | **Tools** |
-|-------------|--------------|--------------|-----------|
-| .NET Core, C# | Angular, TypeScript | SQL Server | Git, SSMS |
-| ASP.NET APIs | RxJS, HTML/CSS | Indexing, Queries | Visual Studio |
-| Entity Framework | Responsive Design | LINQ | Agile |
+| **Languages** | **Frameworks** | **Databases** | **Tools** |
+|---------------|----------------|---------------|-----------|
+| C#, Angular, AngularJS, TypeScript | .NET Framework 4.8, ASP.NET Core, Web API, MVC | SQL Server, MySQL, SQLite, MongoDB | Git, Visual Studio, Postman, Swagger, Grafana, Selenium |
+| HTML, CSS, Java | Spring Boot | | |
 
-**Currently learning**: Data Structures & Algorithms, Machine Learning (.NET), Design Patterns
+**Certifications**: C#, Cloud Computing, Python Bootcamp, SQL Server Query Optimization[file:82]
 
 ---
 
-## 💼 Experience
+## 💼 Professional Experience
 
 ### **Software Engineer**  
-**Eurofins IT Solutions**  
-*2023 – Present | Bangalore, India*
+**Eurofins IT Solutions** *(Hybrid)*  
+**Feb 2025 – Present | Bengaluru**
 
-- Built end-to-end web applications with **.NET backend** + **Angular frontend**
-- Optimized **SQL Server** databases (indexing, query performance)
-- Implemented **RESTful APIs** with authentication & resilience patterns (Polly)
-- Collaborated in Agile teams with QA/product stakeholders
-- Applied **Circuit Breaker** and **Retry** patterns for production reliability
+- Developing **Eurofins proprietary lab testing software** used across multiple facilities
+- **Front-end**: Angular features & UI components
+- **Back-end**: .NET Framework 4.8 services & APIs
+- **Database**: SQL Server design, performance tuning, reporting
+- Configured **Grafana dashboards** for application monitoring & error tracking
+- Collaborate with QA/business teams for feature delivery[file:82]
+
+### **Software Engineer**  
+**TSS Software Limited** *(Remote)*  
+**Jun 2023 – Feb 2025**
+
+- **Led team of 2 developers**: Code reviews, knowledge transfer, mentorship
+- Created **end-to-end employee lifecycle workflow** (creation, verification, deletion)
+- Automated testing with **Selenium APIs**
+- **Tech**: Angular, ASP.NET Core, C#, SQL, Web API, MVC[file:82]
+
+### **Associate Software Engineer**  
+**TSS Software Limited** *(Remote)*  
+**Jan 2022 – Jun 2023**
+
+- **🚀 Performance win**: Reduced record download time for **100k users** from **4-5 hours → 30-45 minutes**
+  - Optimized **SQL indexing** & complex JOIN operations
+  - Implemented **multi-threading in C#** using available cores
+- Owned **Image Comparison & Confidence Scores APIs** (development + deployment)
+- **Tech**: AngularJS, ASP.NET Core, SQL, Git, MVC[file:82]
+
+### **Business Development Analyst**  
+**College Dunia** *(Remote)*  
+**Sep 2020 – Dec 2020**
+
+- Built automation tools for **website traffic analysis**
+- Analyzed search keywords & database management
+- **Tech**: Data Science, Pandas, Matplotlib[file:82]
 
 ---
 
-## 🔥 Featured Projects
+## 🔥 Highlight Projects
 
-### **[Enterprise Dashboard App](https://github.com/MOHITWANKHADE/project1)**
-**Tech**: .NET · Angular · SQL Server  
-- Fullstack reporting dashboard with real-time data visualization  
-- Angular UI with RxJS state management  
-- API optimizations for **40% faster queries**  
-⭐ [View Code](https://github.com/MOHITWANKHADE/project1)
+### **Eurofins Lab Testing Software** *(Current)*
+**Tech**: Angular · .NET Framework 4.8 · SQL Server · Grafana  
+**Live across multiple facilities**. Grafana dashboards for real-time monitoring.
 
-### **[Task Management API](https://github.com/MOHITWANKHADE/project2)**  
-**Tech**: .NET Core · SQL Server  
-- REST API with JWT auth & role-based access  
-- Database design for high-throughput CRUD  
-- **90%+ unit test coverage**  
-⭐ [View Code](https://github.com/MOHITWANKHADE/project2)
+### **Employee Lifecycle Workflow** *(TSS)*
+**Tech**: Angular · ASP.NET Core · SQL  
+**End-to-end workflow** for employee creation/verification/deletion. Led team of 2.
 
-### **[Angular E-Commerce Frontend](https://github.com/MOHITWANKHADE/project3)**  
-**Tech**: Angular · TypeScript  
-- Modern shopping cart with payment integration  
-- RxJS observables for complex state  
-- Fully responsive across devices  
-⭐ [View Code](https://github.com/MOHITWANKHADE/project3)
+### **High-Performance Data Download** *(TSS)*
+**Tech**: C# Multi-threading · SQL Optimization  
+**100k users**: **4-5 hours → 30-45 minutes** via indexing + multi-threading.
+
+*See more on [GitHub](https://github.com/MOHITWANKHADE)*
 
 ---
 
-## 📈 GitHub Stats
+## 📚 Education
+
+**Bachelor of Technology in Information Technology**  
+**Narsee Monjee Institute of Management Studies (NMIMS)**  
+**Jun 2016 – May 2020** | **CGPA: 2.82/4.0**[file:82]
+
+**Senior Secondary (CBSE)**  
+**Christu Jyoti Convent Senior Secondary School** | **2014-2016**
+
+---
+
+## 📊 GitHub Stats
 <div align="center">
-  ![Mohit Wankhade's GitHub stats](https://github-readme-stats.vercel.app/api?username=MOHITWANKHADE&show_icons=true&theme=radical&hide_border=true)
-  ![Top Languages](https://github-readme-stats.vercel.app/api/top-languages/?username=MOHITWANKHADE&layout=compact&theme=radical&hide_border=true)
+  <img src="https://github-readme-stats.vercel.app/api?username=MOHITWANKHADE&show_icons=true&theme=radical&hide_border=true&bg_color=0f111a&title_color=f1f5f9&text_color=94a3b8" width="48%"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MOHITWANKHADE&layout=compact&theme=radical&hide_border=true&bg_color=0f111a&title_color=f1f5f9&text_color=94a3b8" width="40%"/>
 </div>
 
 ---
 
-## 🎯 Open to...
-- **Fullstack roles** (.NET + Angular/TypeScript)  
-- **Side projects** & collaborations  
-- **Mentoring** on .NET/Angular/database topics  
+## 🎯 Open To
+- **Fullstack roles** (.NET + Angular/TypeScript)
+- **Performance optimization** & database projects
+- **Team lead** opportunities
+- **Collaborations** on enterprise apps
 
-**Let's connect!** 🚀
+**📩 Get in touch!** 🚀
 
 ---
-
-*Last updated: January 2026*
-
+⭐ *Updated Jan 2026 from CV*
