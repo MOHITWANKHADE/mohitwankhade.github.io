@@ -1,1 +1,192 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learning Diary | Mohit Wankhade</title>
+
+<style>
+/* ===== SAME THEME ===== */
+:root {
+    --bg-main: #020617;
+    --bg-card: rgba(30, 41, 59, 0.9);
+    --accent: #8b5cf6;
+    --accent-2: #22d3ee;
+    --text-main: #e5e7eb;
+    --text-muted: #9ca3af;
+    --border-glass: rgba(255,255,255,0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: radial-gradient(circle at top, #1e293b, #020617);
+    color: var(--text-main);
+    line-height: 1.7;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(135deg, #7c3aed, #06b6d4);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+}
+
+.role {
+    font-size: 0.9rem;
+    margin-left: 10px;
+    opacity: 0.9;
+}
+
+.nav-links a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.nav-right a {
+    margin-left: 12px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    background: rgba(255,255,255,0.2);
+}
+
+/* ===== LAYOUT ===== */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+section {
+    background: var(--bg-card);
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid var(--border-glass);
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+    color: var(--accent-2);
+}
+
+.entry {
+    margin-bottom: 30px;
+}
+
+.entry h3 {
+    color: var(--accent);
+}
+
+.date {
+    color: var(--text-muted);
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 6px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: var(--text-muted);
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="nav-container">
+        <div>
+            <span class="logo">Mohit Wankhade</span>
+            <span class="role">Software Engineer</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Portfolio</a>
+            <a href="learning.html">Learning</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="https://github.com/MOHITWANKHADE" target="_blank">GitHub</a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <section>
+        <h1>📘 Learning Diary</h1>
+        <p>This page tracks what I’m learning daily as a software engineer.</p>
+    </section>
+
+    <section class="entry">
+        <h3>Angular Performance Optimization</h3>
+        <p class="date">Jan 2026</p>
+        <ul>
+            <li>ChangeDetectionStrategy.OnPush</li>
+            <li>trackBy with ngFor</li>
+            <li>Lazy-loaded modules</li>
+        </ul>
+    </section>
+
+    <section class="entry">
+        <h3>Advanced SQL Server Indexing</h3>
+        <p class="date">Ongoing</p>
+        <ul>
+            <li>Covering indexes</li>
+            <li>Execution plan analysis</li>
+            <li>Query Store</li>
+        </ul>
+    </section>
+
+    <section class="entry">
+        <h3>.NET Multithreading Internals</h3>
+        <p class="date">Ongoing</p>
+        <ul>
+            <li>Task Parallel Library (TPL)</li>
+            <li>Async vs Parallel loops</li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    © 2026 Mohit Wankhade • Learning in public 🚀
+</footer>
+
+</body>
+</html>
