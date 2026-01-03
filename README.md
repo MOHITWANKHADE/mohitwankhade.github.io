@@ -1,9 +1,6 @@
 # 👋 Mohit Wankhade  
 **Software Engineer | .NET & Angular | Eurofins**
 
-<p align="center">
-  <img src="https://avatars.githubusercontent.com/u/12345678?v=4" width="128" alt="Mohit Wankhade">
-</p>
 
 ## 🚀 About Me
 Software developer with **2+ years** experience building enterprise web applications using **.NET**, **Angular**, and **SQL Server** at **Eurofins IT Solutions** (Bangalore, India). Passionate about clean code, database optimization, and scalable APIs.
