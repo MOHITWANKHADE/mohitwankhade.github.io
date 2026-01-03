@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mohit Wankhade - Software Engineer at Eurofins | .NET and Angular Developer | Bangalore, India">
+    <meta name="description" content="Mohit Wankhade - Software Engineer at Eurofins | .NET Framework 4.8, Angular, SQL Server | Bengaluru">
     <title>Mohit Wankhade | Software Engineer</title>
     <style>
         * {
@@ -39,6 +39,11 @@
 
         header p {
             font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            font-size: 1.1rem;
             margin-bottom: 20px;
         }
 
@@ -74,7 +79,7 @@
             padding-bottom: 10px;
         }
 
-        .experience-item, .education-item, .project-item {
+        .experience-item, .project-item {
             margin-bottom: 30px;
         }
 
@@ -93,21 +98,21 @@
         .date {
             color: #666;
             font-style: italic;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 1rem;
         }
 
-        .experience-item ul, .project-item ul {
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-
-        .experience-item li, .project-item li {
-            margin-bottom: 8px;
+        .achievement {
+            background: #f0f8ff;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
         }
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
             margin-top: 20px;
         }
@@ -121,7 +126,7 @@
 
         .skill-category h3 {
             color: #667eea;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         .skill-category ul {
@@ -129,18 +134,23 @@
         }
 
         .skill-category li {
-            padding: 5px 0;
+            padding: 8px 0;
             border-bottom: 1px solid #eee;
         }
 
         .project-links {
-            margin-top: 10px;
+            margin-top: 15px;
         }
 
         .project-links a {
             color: #667eea;
             text-decoration: none;
-            margin-right: 15px;
+            margin-right: 20px;
+            font-weight: 500;
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;
         }
 
         footer {
@@ -152,21 +162,10 @@
         }
 
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            header p {
-                font-size: 1rem;
-            }
-
-            section {
-                padding: 25px;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
+            header h1 { font-size: 2.2rem; }
+            header p { font-size: 1.1rem; }
+            section { padding: 25px; margin: 20px 0; }
+            .skills-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -174,10 +173,11 @@
     <header>
         <div class="container">
             <h1>Mohit Wankhade</h1>
-            <p>Software Engineer | .NET & Angular Developer</p>
-            <p>📍 Bangalore, India</p>
+            <p>Software Engineer | Eurofins IT Solutions</p>
+            <div class="contact-info">
+                <p>📍 Bengaluru, India </p>
+            </div>
             <div class="contact-links">
-                <a href="mailto:mohit.wankhade@example.com">📧 Email</a>
                 <a href="https://in.linkedin.com/in/mohit-wankhade-6b7989157" target="_blank">💼 LinkedIn</a>
                 <a href="https://github.com/MOHITWANKHADE" target="_blank">💻 GitHub</a>
             </div>
@@ -186,123 +186,141 @@
 
     <div class="container">
         <section id="about">
-            <h2>About Me</h2>
+            <h2>👨‍💻 About Me</h2>
             <p>
-                Software developer with 2+ years of professional experience building enterprise web applications 
-                using .NET, Angular, and SQL Server, currently working at Eurofins in Bangalore, India. 
-                Passionate about writing clean, scalable code and optimizing database performance. 
-                Actively learning machine learning, data structures, and advanced C# concepts.
+                Software Engineer with <strong>4+ years</strong> building enterprise applications using 
+                <strong>.NET Framework 4.8</strong>, <strong>Angular</strong>, <strong>ASP.NET Core</strong>, 
+                and <strong>SQL Server</strong>. Currently developing <strong>Eurofins lab testing software</strong> 
+                used across multiple facilities.
+            </p>
+            <p>
+                <strong>Key achievement</strong>: Reduced record download time for <strong>100k users</strong> 
+                from <strong>4-5 hours to 30-45 minutes</strong> through SQL optimization + C# multi-threading.[file:82]
             </p>
         </section>
 
         <section id="skills">
-            <h2>Skills</h2>
+            <h2>🛠️ Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Backend</h3>
+                    <h3>Languages & Frameworks</h3>
                     <ul>
-                        <li>.NET, C#, ASP.NET Core</li>
-                        <li>RESTful APIs, Entity Framework</li>
-                        <li>SQL Server, LINQ</li>
+                        <li>C#, Angular, AngularJS, TypeScript</li>
+                        <li>.NET Framework 4.8, ASP.NET Core, Web API, MVC</li>
+                        <li>HTML, CSS, Java, Spring Boot</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Frontend</h3>
+                    <h3>Databases</h3>
                     <ul>
-                        <li>Angular, TypeScript</li>
-                        <li>RxJS, HTML5, CSS3</li>
-                        <li>Responsive Design</li>
+                        <li>SQL Server (Query Optimization Certified)</li>
+                        <li>MySQL, SQLite, MongoDB</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Tools & Practices</h3>
+                    <h3>Tools & DevOps</h3>
                     <ul>
-                        <li>Git, SQL Server Management Studio</li>
-                        <li>Unit Testing, Clean Code</li>
-                        <li>Agile, CI/CD basics</li>
+                        <li>Git, Visual Studio, Postman, Swagger API</li>
+                        <li>Grafana (dashboards), Selenium (automation)</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Learning</h3>
+                    <h3>Certifications</h3>
                     <ul>
-                        <li>Data Structures & Algorithms</li>
-                        <li>Machine Learning (.NET)</li>
-                        <li>Design Patterns</li>
+                        <li>C# Certification</li>
+                        <li>Cloud Computing</li>
+                        <li>Python Bootcamp</li>
+                        <li>SQL Server Query Optimization</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section id="experience">
-            <h2>Experience</h2>
+            <h2>💼 Professional Experience</h2>
+            
             <div class="experience-item">
                 <h3>Software Engineer</h3>
                 <p class="company">Eurofins IT Solutions</p>
-                <p class="date">2023 – Present | Bangalore, India</p>
+                <p class="date">Feb 2025 – Present | Bengaluru (Hybrid)</p>
                 <ul>
-                    <li>Develop end-to-end web applications using .NET backend and Angular frontend</li>
-                    <li>Design and optimize SQL Server databases, including indexing and query performance</li>
-                    <li>Implement RESTful APIs with authentication, error handling, and scalability</li>
-                    <li>Collaborate with QA and product teams in Agile environment</li>
-                    <li>Apply design patterns like Circuit Breaker and Retry using Polly library</li>
+                    <li>Develop <strong>Eurofins lab testing software</strong> used across multiple facilities</li>
+                    <li><strong>Angular</strong> front-end + <strong>.NET Framework 4.8</strong> back-end services</li>
+                    <li>SQL Server database design, performance tuning, reporting</li>
+                    <li>Grafana dashboards for application monitoring & error tracking</li>
+                    <li>Collaborate with QA/business teams for feature delivery</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Software Engineer</h3>
+                <p class="company">TSS Software Limited</p>
+                <p class="date">Jun 2023 – Feb 2025 | Remote</p>
+                <div class="achievement">
+                    <strong>Led team of 2 developers</strong>: Code reviews, mentorship, knowledge transfer
+                </div>
+                <ul>
+                    <li>End-to-end <strong>employee lifecycle workflow</strong> (create/verify/delete)</li>
+                    <li>Automated testing with <strong>Selenium APIs</strong></li>
+                    <li>Angular, ASP.NET Core, C#, SQL, Web API, MVC</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Associate Software Engineer</h3>
+                <p class="company">TSS Software Limited</p>
+                <p class="date">Jan 2022 – Jun 2023 | Remote</p>
+                <div class="achievement">
+                    <strong>🚀 100k users:</strong> Record download time **4-5 hours → 30-45 minutes**
+                </div>
+                <ul>
+                    <li>SQL indexing + complex JOIN optimization</li>
+                    <li>C# multi-threading using available cores</li>
+                    <li>Owned <strong>Image Comparison & Confidence Scores APIs</strong> (deployment)</li>
                 </ul>
             </div>
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
+            <h2>🔥 Key Projects</h2>
             <div class="project-item">
-                <h3>Enterprise Dashboard App</h3>
-                <p class="date">.NET · Angular · SQL Server</p>
-                <ul>
-                    <li>Fullstack app for data visualization and reporting with real-time updates</li>
-                    <li>Implemented responsive Angular UI with RxJS state management</li>
-                    <li>Optimized .NET APIs for 40% faster query response times</li>
-                </ul>
+                <h3>Eurofins Lab Testing Software</h3>
+                <p class="date">Angular · .NET Framework 4.8 · SQL Server · Grafana</p>
+                <p><strong>Live across multiple Eurofins facilities</strong>. Grafana dashboards for real-time monitoring.</p>
                 <div class="project-links">
-                    <a href="https://github.com/MOHITWANKHADE/project1" target="_blank">View Code</a>
-                    <a href="#">Live Demo</a>
+                    <a href="https://github.com/MOHITWANKHADE" target="_blank">GitHub</a>
                 </div>
             </div>
             <div class="project-item">
-                <h3>Task Management API</h3>
-                <p class="date">.NET Core · SQL Server</p>
-                <ul>
-                    <li>REST API with JWT auth, role-based access, and Polly resilience patterns</li>
-                    <li>Database design with indexing for high-throughput CRUD operations</li>
-                    <li>Unit tests achieving 90%+ coverage</li>
-                </ul>
+                <h3>Employee Lifecycle Workflow</h3>
+                <p class="date">Angular · ASP.NET Core · SQL</p>
+                <p><strong>End-to-end workflow</strong> led team of 2. Selenium test automation.</p>
                 <div class="project-links">
-                    <a href="https://github.com/MOHITWANKHADE/project2" target="_blank">View Code</a>
+                    <a href="https://github.com/MOHITWANKHADE" target="_blank">GitHub</a>
                 </div>
             </div>
             <div class="project-item">
-                <h3>Angular E-Commerce Frontend</h3>
-                <p class="date">Angular · TypeScript</p>
-                <ul>
-                    <li>Modern shopping cart with cart persistence and payment integration</li>
-                    <li>State management with services and RxJS observables</li>
-                    <li>Fully responsive across devices</li>
-                </ul>
+                <h3>High-Performance Data System</h3>
+                <p class="date">C# Multi-threading · SQL Optimization</p>
+                <p><strong>100k users:</strong> 4-5hr → 30min downloads via indexing + threading.</p>
                 <div class="project-links">
-                    <a href="https://github.com/MOHITWANKHADE/project3" target="_blank">View Code</a>
+                    <a href="https://github.com/MOHITWANKHADE" target="_blank">GitHub</a>
                 </div>
             </div>
         </section>
 
         <section id="education">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>SVKM's Narsee Monjee Institute of Management Studies (NMIMS)</h3>
-                <p class="date">Bachelor's Degree in Computer Engineering</p>
-                <p>Strong foundation in software development, data structures, and algorithms.</p>
+            <h2>📚 Education</h2>
+            <div class="experience-item">
+                <h3>Bachelor of Technology in Information Technology</h3>
+                <p class="company">Narsee Monjee Institute of Management Studies (NMIMS)</p>
             </div>
         </section>
     </div>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Mohit Wankhade. Built with HTML & CSS. Open to opportunities.</p>
+            <p>&copy; 2026 Mohit Wankhade | Open to fullstack opportunities (.NET + Angular) | Built with HTML/CSS</p>
         </div>
     </footer>
 </body>
