@@ -1,11 +1,7 @@
 # 👨‍💻 Mohit Wankhade  
 **Software Engineer | .NET & Angular | Eurofins IT Solutions**
 
-<p align="center">
-  <img src="https://avatars.githubusercontent.com/u/12345678?v=4" width="128" alt="Mohit Wankhade">
-</p>
-
-📍 **Bengaluru, India** | 📱 **+91 9907695839** | ✉️ **[1998mohitwankhade@gmail.com](mailto:1998mohitwankhadegmail.com)**  
+📍 **Bengaluru, India**  
 🔗 **[LinkedIn](https://in.linkedin.com/in/mohit-wankhade-6b7989157)** | 💻 **[GitHub](https://github.com/MOHITWANKHADE)**
 
 ---
