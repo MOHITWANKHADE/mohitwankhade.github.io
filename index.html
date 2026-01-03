@@ -551,3 +551,556 @@
 
 </body>
 </html>
+l<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohit Wankhade | Software Engineer | .NET • Angular • SQL Server">
+    <title>Mohit Wankhade | Software Engineer</title>
+
+    <style>
+        :root {
+            --bg-main: #020617;
+            --bg-card: rgba(30, 41, 59, 0.9);
+            --accent: #8b5cf6;
+            --accent-2: #22d3ee;
+            --text-main: #e5e7eb;
+            --text-muted: #9ca3af;
+            --border-glass: rgba(255,255,255,0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: radial-gradient(circle at top, #1e293b, #020617);
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        /* ===== NAVBAR ===== */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: linear-gradient(135deg, #7c3aed, #06b6d4);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .role {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            color: white;
+        }
+
+        /* Hamburger Menu */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+
+        .menu-checkbox {
+            display: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            position: relative;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: white;
+            bottom: -4px;
+            left: 0;
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 12px;
+        }
+
+        .nav-right a {
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: white;
+            background: rgba(255,255,255,0.2);
+            transition: background 0.3s, transform 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .nav-right a:hover {
+            background: rgba(255,255,255,0.35);
+            transform: scale(1.05);
+        }
+
+        /* ===== LAYOUT ===== */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin: 40px 0;
+            padding: 40px;
+            background: var(--bg-card);
+            border-radius: 16px;
+            border: 1px solid var(--border-glass);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: var(--accent-2);
+            border-left: 5px solid var(--accent);
+            padding-left: 15px;
+        }
+
+        h3 {
+            color: var(--text-main);
+            margin-bottom: 10px;
+        }
+
+        /* ===== ABOUT ===== */
+        #about p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        /* ===== SKILLS ===== */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .skill-category {
+            background: linear-gradient(145deg, #020617, #1e293b);
+            padding: 25px;
+            border-radius: 14px;
+            border: 1px solid var(--border-glass);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 30px rgba(139,92,246,0.4);
+        }
+
+        .skill-category h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .skill-category ul {
+            list-style: none;
+        }
+
+        .skill-category li {
+            padding: 8px 0;
+            color: var(--text-muted);
+        }
+
+        /* ===== EXPERIENCE & PROJECTS ===== */
+        .experience-item, .project-item {
+            margin-bottom: 30px;
+        }
+
+        .company {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .date {
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .achievement {
+            background: linear-gradient(135deg, #7c3aed33, #06b6d433);
+            padding: 15px;
+            border-left: 4px solid var(--accent-2);
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        /* ===== PROJECT LINKS ===== */
+        .project-links a {
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 15px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, #7c3aed, #06b6d4);
+            transition: transform 0.3s;
+        }
+
+        .project-links a:hover {
+            transform: scale(1.05);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            margin-top: 60px;
+            background: #020617;
+            padding: 30px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* ===== MOBILE RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: flex;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                padding: 20px 0;
+                gap: 15px;
+            }
+
+            .nav-right {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                padding: 10px 0;
+            }
+
+            .nav-right a {
+                width: 100%;
+            }
+
+            .menu-checkbox:checked ~ .nav-links,
+            .menu-checkbox:checked ~ .nav-right {
+                display: flex;
+            }
+
+            .menu-checkbox:checked ~ .menu-toggle span:nth-child(1) {
+                transform: rotate(45deg) translate(8px, 8px);
+            }
+
+            .menu-checkbox:checked ~ .menu-toggle span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .menu-checkbox:checked ~ .menu-toggle span:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -7px);
+            }
+
+            section {
+                padding: 25px 20px;
+                margin: 20px 0;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            .logo {
+                font-size: 1.2rem;
+            }
+
+            .role {
+                font-size: 0.8rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            section {
+                padding: 20px 15px;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            #about p {
+                font-size: 1rem;
+            }
+
+            .nav-container {
+                padding: 12px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="nav-container">
+        <div class="nav-brand">
+            <span class="logo">Mohit Wankhade</span>
+            <span class="role">Software Engineer</span>
+        </div>
+
+        <input type="checkbox" id="menu" class="menu-checkbox">
+        <label for="menu" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="learning.html">Learning</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="https://in.linkedin.com/in/mohit-wankhade-6b7989157" target="_blank">LinkedIn</a>
+            <a href="https://github.com/MOHITWANKHADE" target="_blank">GitHub</a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>👨‍💻 About Me</h2>
+        <p>
+            Software Engineer with <strong>4+ years</strong> of experience in building
+            enterprise-grade applications using <strong>.NET</strong>, <strong>Angular</strong>,
+            and <strong>SQL Server</strong>.
+        </p>
+        <div class="achievement">
+            🚀 Reduced data processing time for <strong>100k+ users</strong> from
+            <strong>4–5 hours to 30–45 minutes</strong>.
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>🛠️ Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Languages & Frameworks</h3>
+                <ul>
+                    <li>C#, Angular, TypeScript</li>
+                    <li>.NET Framework 4.8, ASP.NET Core</li>
+                    <li>HTML, CSS, Java</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Databases</h3>
+                <ul>
+                    <li>SQL Server (Optimization)</li>
+                    <li>MySQL, MongoDB</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git, Postman, Swagger</li>
+                    <li>Grafana, Selenium</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <h2>💼 Experience</h2>
+
+        <div class="experience-item">
+            <h3>Software Engineer</h3>
+            <p class="company">Eurofins IT Solutions</p>
+            <p class="date">Feb 2025 – Present | Bengaluru</p>
+            <ul>
+                <li>Develop lab testing software with Angular + .NET Framework 4.8</li>
+                <li>SQL Server performance tuning and optimization</li>
+                <li>Grafana monitoring dashboards for application tracking</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Software Engineer</h3>
+            <p class="company">TSS Software Limited</p>
+            <p class="date">Jun 2023 – Feb 2025 | Remote</p>
+            <div class="achievement">
+                <strong>Led team of 2 developers</strong>: Code reviews, mentorship, knowledge transfer
+            </div>
+            <ul>
+                <li>Employee lifecycle workflow system (Angular, ASP.NET Core)</li>
+                <li>Selenium-based test automation</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Associate Software Engineer</h3>
+            <p class="company">TSS Software Limited</p>
+            <p class="date">Jan 2022 – Jun 2023 | Remote</p>
+            <div class="achievement">
+                <strong>🚀 100k users:</strong> Record download time <strong>4-5 hours → 30-45 minutes</strong>
+            </div>
+            <ul>
+                <li>SQL indexing + complex JOIN optimization</li>
+                <li>C# multi-threading using available cores</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>🔥 Projects</h2>
+
+        <div class="project-item">
+            <h3>Eurofins Lab Testing Software</h3>
+            <p class="date">Angular · .NET Framework 4.8 · SQL Server · Grafana</p>
+            <p><strong>Live across multiple Eurofins facilities</strong>. Real-time monitoring dashboards.</p>
+            <div class="project-links">
+                <a href="https://github.com/MOHITWANKHADE" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h3>Employee Lifecycle Workflow</h3>
+            <p class="date">Angular · ASP.NET Core · SQL</p>
+            <p><strong>End-to-end workflow</strong> with automated testing using Selenium.</p>
+            <div class="project-links">
+                <a href="https://github.com/MOHITWANKHADE" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h3>High-Performance Data System</h3>
+            <p class="date">C# Multi-threading · SQL Optimization</p>
+            <p><strong>100k users:</strong> 4-5hr → 30min downloads via indexing + threading.</p>
+            <div class="project-links">
+                <a href="https://github.com/MOHITWANKHADE" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARNING DIARY -->
+    <section id="learning">
+        <h2>📘 Learning Diary</h2>
+
+        <div class="experience-item">
+            <h3>Angular Performance Optimization</h3>
+            <p class="date">Jan 2026</p>
+            <ul>
+                <li>OnPush change detection strategy</li>
+                <li>Lazy loading modules for better performance</li>
+                <li>TrackBy optimization for ngFor loops</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Advanced SQL Indexing</h3>
+            <p class="date">Ongoing</p>
+            <ul>
+                <li>Covering indexes and query optimization</li>
+                <li>Execution plan analysis techniques</li>
+                <li>Database performance tuning strategies</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>.NET Design Patterns</h3>
+            <p class="date">Ongoing</p>
+            <ul>
+                <li>Circuit breaker and retry patterns</li>
+                <li>Polly library implementation</li>
+                <li>Resilient application architecture</li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Mohit Wankhade | Open to fullstack opportunities (.NET + Angular)</p>
+</footer>
+
+</body>
+</html>
