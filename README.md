@@ -91,11 +91,10 @@
 ## 📚 Education
 
 **Bachelor of Technology in Information Technology**  
-**Narsee Monjee Institute of Management Studies (NMIMS)**  
-**Jun 2016 – May 2020** | **CGPA: 2.82/4.0**[file:82]
+**Narsee Monjee Institute of Management Studies (NMIMS)**
 
 **Senior Secondary (CBSE)**  
-**Christu Jyoti Convent Senior Secondary School** | **2014-2016**
+**Christu Jyoti Convent Senior Secondary School**
 
 ---
 
