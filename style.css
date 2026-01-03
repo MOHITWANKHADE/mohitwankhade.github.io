@@ -1,0 +1,237 @@
+/* =========================
+   THEME VARIABLES
+========================= */
+:root {
+    --bg-main: #020617;
+    --bg-card: rgba(30, 41, 59, 0.9);
+    --accent: #8b5cf6;
+    --accent-2: #22d3ee;
+    --text-main: #e5e7eb;
+    --text-muted: #9ca3af;
+    --border-glass: rgba(255,255,255,0.08);
+}
+
+/* =========================
+   BASE RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: radial-gradient(circle at top, #1e293b, #020617);
+    color: var(--text-main);
+    line-height: 1.7;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(135deg, #7c3aed, #06b6d4);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+}
+
+.role {
+    font-size: 0.9rem;
+    margin-left: 10px;
+    opacity: 0.9;
+    color: white;
+}
+
+.nav-links a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: white;
+    bottom: -4px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-right a {
+    margin-left: 12px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    background: rgba(255,255,255,0.2);
+    transition: background 0.3s;
+}
+
+.nav-right a:hover {
+    background: rgba(255,255,255,0.35);
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+section {
+    background: var(--bg-card);
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid var(--border-glass);
+    margin-bottom: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+h1, h2 {
+    color: var(--accent-2);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    border-left: 5px solid var(--accent);
+    padding-left: 15px;
+}
+
+/* =========================
+   SKILLS
+========================= */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.skill-category {
+    background: linear-gradient(145deg, #020617, #1e293b);
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid var(--border-glass);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-category:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(139,92,246,0.4);
+}
+
+.skill-category h3 {
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.skill-category ul {
+    list-style: none;
+}
+
+.skill-category li {
+    padding: 8px 0;
+    color: var(--text-muted);
+}
+
+/* =========================
+   EXPERIENCE / PROJECTS
+========================= */
+.experience-item, .project-item {
+    margin-bottom: 30px;
+}
+
+.company {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.date {
+    color: var(--text-muted);
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+.achievement {
+    background: linear-gradient(135deg, #7c3aed33, #06b6d433);
+    padding: 15px;
+    border-left: 4px solid var(--accent-2);
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+/* =========================
+   PROJECT LINKS
+========================= */
+.project-links a {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 15px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #7c3aed, #06b6d4);
+}
+
+/* =========================
+   LEARNING PAGE
+========================= */
+.entry h3 {
+    color: var(--accent);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+}
