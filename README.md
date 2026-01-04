@@ -20,7 +20,7 @@
 | C#, Angular, AngularJS, TypeScript | .NET Framework 4.8, ASP.NET Core, Web API, MVC | SQL Server, MySQL, SQLite, MongoDB | Git, Visual Studio, Postman, Swagger, Grafana, Selenium |
 | HTML, CSS, Java | Spring Boot | | |
 
-**Certifications**: C#, Cloud Computing, Python Bootcamp, SQL Server Query Optimization[file:82]
+**Certifications**: C#, Cloud Computing, Python Bootcamp, SQL Server Query Optimization
 
 ---
 
@@ -35,7 +35,7 @@
 - **Back-end**: .NET Framework 4.8 services & APIs
 - **Database**: SQL Server design, performance tuning, reporting
 - Configured **Grafana dashboards** for application monitoring & error tracking
-- Collaborate with QA/business teams for feature delivery[file:82]
+- Collaborate with QA/business teams for feature delivery
 
 ### **Software Engineer**  
 **TSS Software Limited** *(Remote)*  
@@ -44,7 +44,7 @@
 - **Led team of 2 developers**: Code reviews, knowledge transfer, mentorship
 - Created **end-to-end employee lifecycle workflow** (creation, verification, deletion)
 - Automated testing with **Selenium APIs**
-- **Tech**: Angular, ASP.NET Core, C#, SQL, Web API, MVC[file:82]
+- **Tech**: Angular, ASP.NET Core, C#, SQL, Web API, MVC
 
 ### **Associate Software Engineer**  
 **TSS Software Limited** *(Remote)*  
@@ -54,7 +54,7 @@
   - Optimized **SQL indexing** & complex JOIN operations
   - Implemented **multi-threading in C#** using available cores
 - Owned **Image Comparison & Confidence Scores APIs** (development + deployment)
-- **Tech**: AngularJS, ASP.NET Core, SQL, Git, MVC[file:82]
+- **Tech**: AngularJS, ASP.NET Core, SQL, Git, MVC
 
 ### **Business Development Analyst**  
 **College Dunia** *(Remote)*  
@@ -62,7 +62,7 @@
 
 - Built automation tools for **website traffic analysis**
 - Analyzed search keywords & database management
-- **Tech**: Data Science, Pandas, Matplotlib[file:82]
+- **Tech**: Data Science, Pandas, Matplotlib
 
 ---
 
