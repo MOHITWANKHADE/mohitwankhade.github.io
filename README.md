@@ -7,7 +7,7 @@
 ---
 
 ## 🚀 About Me
-**Software Engineer** with **4+ years** experience building enterprise applications using **.NET Framework 4.8**, **Angular**, **ASP.NET Core**, and **SQL Server**. Currently developing **Eurofins lab testing software** used across multiple facilities. Proven track record of **performance optimization** (reduced 100k user download time from **4-5 hours to 30-45 minutes**).[file:82]
+**Software Engineer** with **4+ years** experience building enterprise applications using **.NET Framework 4.8**, **Angular**, **ASP.NET Core**, and **SQL Server**. Currently developing **Eurofins lab testing software** used across multiple facilities. Proven track record of **performance optimization** (reduced 100k user download time from **4-5 hours to 30-45 minutes**).
 
 **Key strengths**: Database optimization, fullstack development, team leadership, Grafana monitoring.
 
