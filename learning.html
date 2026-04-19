@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Learning Diary | Mohit Wankhade</title>
+<title>Design Patterns | Mohit Wankhade</title>
 
 <style>
 :root {
@@ -30,7 +29,7 @@ body {
     line-height: 1.7;
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 .navbar {
     position: sticky;
     top: 0;
@@ -53,12 +52,6 @@ body {
     color: white;
 }
 
-.role {
-    font-size: 0.9rem;
-    margin-left: 10px;
-    opacity: 0.9;
-}
-
 .nav-links a {
     margin: 0 12px;
     text-decoration: none;
@@ -66,16 +59,7 @@ body {
     font-weight: 500;
 }
 
-.nav-right a {
-    margin-left: 12px;
-    padding: 6px 14px;
-    border-radius: 20px;
-    text-decoration: none;
-    color: white;
-    background: rgba(255,255,255,0.2);
-}
-
-/* ===== LAYOUT ===== */
+/* LAYOUT */
 .container {
     max-width: 1100px;
     margin: auto;
@@ -84,23 +68,23 @@ body {
 
 section {
     background: var(--bg-card);
-    padding: 40px;
+    padding: 30px;
     border-radius: 16px;
     border: 1px solid var(--border-glass);
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 h1 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     margin-bottom: 20px;
     color: var(--accent-2);
 }
 
-.entry {
-    margin-bottom: 30px;
+.pattern {
+    margin-bottom: 25px;
 }
 
-.entry h3 {
+.pattern h3 {
     color: var(--accent);
 }
 
@@ -114,10 +98,6 @@ ul {
     padding-left: 20px;
 }
 
-ul li {
-    margin-bottom: 6px;
-}
-
 footer {
     text-align: center;
     padding: 30px;
@@ -128,63 +108,69 @@ footer {
 
 <body>
 
-<!-- NAVBAR -->
 <header class="navbar">
     <div class="nav-container">
-        <div>
-            <span class="logo">Mohit Wankhade</span>
-            <span class="role">Software Engineer</span>
-        </div>
+        <div class="logo">Mohit Wankhade</div>
 
         <nav class="nav-links">
             <a href="index.html">Portfolio</a>
             <a href="learning.html">Learning</a>
         </nav>
-
-        <div class="nav-right">
-            <a href="https://github.com/MOHITWANKHADE" target="_blank">GitHub</a>
-        </div>
     </div>
 </header>
 
 <div class="container">
+
     <section>
-        <h1>📘 Learning Diary</h1>
-        <p>This page tracks what I’m learning daily as a software engineer.</p>
+        <h1>🧠 Design Patterns</h1>
+        <p>Tracking my journey of mastering design patterns for senior engineering roles.</p>
     </section>
 
-    <section class="entry">
-        <h3>Angular Performance Optimization</h3>
-        <p class="date">Jan 2026</p>
+    <!-- CREATIONAL -->
+    <section class="pattern">
+        <h3>Singleton Pattern</h3>
+        <p class="date">April 2026</p>
         <ul>
-            <li>ChangeDetectionStrategy.OnPush</li>
-            <li>trackBy with ngFor</li>
-            <li>Lazy-loaded modules</li>
+            <li>Ensures only one instance exists</li>
+            <li>Used in logging, caching</li>
+            <li>Thread-safe implementation is important</li>
         </ul>
     </section>
 
-    <section class="entry">
-        <h3>Advanced SQL Server Indexing</h3>
-        <p class="date">Ongoing</p>
+    <section class="pattern">
+        <h3>Factory Pattern</h3>
+        <p class="date">April 2026</p>
         <ul>
-            <li>Covering indexes</li>
-            <li>Execution plan analysis</li>
-            <li>Query Store</li>
+            <li>Encapsulates object creation logic</li>
+            <li>Promotes loose coupling</li>
+            <li>Used in service creation layers</li>
         </ul>
     </section>
 
-    <section class="entry">
-        <h3>.NET Multithreading Internals</h3>
-        <p class="date">Ongoing</p>
+    <!-- STRUCTURAL -->
+    <section class="pattern">
+        <h3>Decorator Pattern</h3>
+        <p class="date">Upcoming</p>
         <ul>
-            <li>Task Parallel Library (TPL)</li>
-            <li>Async vs Parallel loops</li>
+            <li>Adds behavior dynamically</li>
+            <li>Avoids subclass explosion</li>
         </ul>
     </section>
+
+    <!-- BEHAVIORAL -->
+    <section class="pattern">
+        <h3>Observer Pattern</h3>
+        <p class="date">Upcoming</p>
+        <ul>
+            <li>Publisher-subscriber model</li>
+            <li>Used in event-driven systems</li>
+        </ul>
+    </section>
+
 </div>
 
 <footer>
-    © 2026 Mohit Wankhade • Learning in public 🚀
+    © 2026 Mohit Wankhade • Design Patterns Journey 🚀
 </footer>
 
 </body>
