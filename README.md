@@ -18,7 +18,7 @@
 | **Languages** | **Frameworks** | **Databases** | **Tools** |
 |---------------|----------------|---------------|-----------|
 | C#, Angular, AngularJS, TypeScript | .NET Framework 4.8, ASP.NET Core, Web API, MVC | SQL Server, MySQL, SQLite, MongoDB | Git, Visual Studio, Postman, Swagger, Grafana, Selenium |
-| HTML, CSS, Java | Spring Boot | | |
+| HTML, CSS, Java | | |
 
 **Certifications**: C#, Cloud Computing, Python Bootcamp, SQL Server Query Optimization
 
